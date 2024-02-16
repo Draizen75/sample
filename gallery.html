@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gallery</title>
+</head>
+<body>
+    <header>
+        <h1>WELCOME TO MY PORTFOLIO</h1>
+        <h3 align="center">
+            <strong><span id="date_time"></span></strong>
+        </h3>
+        <script type="text/javascript" src="date.js"></script>
+        <script type="text/javascript" src="newtab.js"></script>
+        <script type="text/javascript">
+            window.onload = function () {
+                date_time('date_time');
+            };
+        </script>
+    </header>
+    <nav>
+        <div class="nav-pages">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </div>
+    </nav>
+<div class="main">
+    <section id="gallery">
+        <h2>Sample Gallery</h2>
+        <img class= "img" src="g1.jpg" alt="Image 1" onclick="openImageInNewTab('g1.jpg')">
+        <img class= "img" src="g2.jpg" alt="Image 2" onclick="openImageInNewTab('g2.jpg')">
+        <img class= "img" src="g3.jpg" alt="Image 2" onclick="openImageInNewTab('g3.jpg')">
+    </section>
+</div>
+</body>
+</html>

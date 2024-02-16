@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman';
+}
+
+/* Base styles for larger screens */
+.main {
+    text-align: center;
+    padding: 70px;
+    background: linear-gradient(to top right, #5761B2, #1FC5A8);
+}
+
+header {
+    background: linear-gradient(to right, #5761B2, #1FC5A8);
+    text-align: center;
+    font-size: larger;
+    color: #010000;
+    padding: 25px;
+}
+
+.nav-pages {
+    background-color: #0f0902;
+    flex: 1;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-pages ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 30px;
+    transition: transform 0.3s;
+    border-radius: 50px;
+}
+
+.nav-pages ul li a {
+    color: rgb(255, 254, 254);
+    text-decoration: none;
+    font-size: 120%;
+}
+
+.nav-pages ul li:hover {
+    background-color: #0E8568;
+    transform: scale(1.3);
+}
+
+#introduction,
+#projects,
+#testimonials,
+#contact-form,
+#contact-info,
+#gallery {
+    text-align: center;
+    padding: 50px;
+    color: #000000;
+}
+
+#introduction h2,
+#projects h2,
+#testimonials h2,
+#contact-form h2,
+#gallery h2 {
+    font-size: 30px;
+}
+
+#introduction p,
+#projects p,
+#testimonials p {
+    font-size: 20px;
+}
+
+#contact-form label {
+    font-size: 20px;
+    color: #050404;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #060606;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    background-color: #1FC5A8;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #0E8568;
+}
+
+.img {
+    width: 300px;
+    height: 300px;
+    margin: 25px;
+    cursor: pointer;
+    transition: transform 0.5s;
+    border-radius: 150px;
+}
+
+.img:hover {
+    transform: scale(1.3);
+}
+
+/* Media Queries for Responsive Design */
+
+/* Small screens (e.g., smartphones) */
+@media (max-width: 768px) {
+    .main {
+        padding: 30px;
+    }
+    
+    header {
+        font-size: medium;
+    }
+
+    .nav-pages ul li {
+        margin: 0 15px;
+    }
+
+    #introduction,
+    #projects,
+    #testimonials,
+    #contact-form,
+    #contact-info,
+    #gallery {
+        padding: 30px;
+    }
+
+    #introduction h2,
+    #projects h2,
+    #testimonials h2 {
+        font-size: 24px;
+    }
+
+    #introduction p,
+    #projects p,
+    #testimonials p {
+        font-size: 16px;
+    }
+    
+    #contact-form input[type="text"],
+    #contact-form input[type="email"],
+    #contact-form textarea {
+        font-size: 16px;
+    }
+
+    #contact-form button {
+        font-size: 14px;
+    }
+    
+    .img {
+        width: 200px;
+        height: 200px;
+        margin: 15px;
+    }
+}

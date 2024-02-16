@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <h1>WELCOME TO MY PORTFOLIO</h1>
+        <h3 align="center">
+            <strong><span id="date_time"></span></strong>
+        </h3>
+        <script type="text/javascript" src="date.js"></script>
+        <script type="text/javascript" src="newtab.js"></script>
+        <script type="text/javascript">
+            window.onload = function () {
+                date_time('date_time');
+            };
+        </script>
+    </header>
+    <nav>
+        <div class="nav-pages">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </div>
+    </nav>
+<div class="main">
+    <section id="contact-form">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="3"required></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
+    <section id="contact-info">
+        <h2>Contact Information</h2>
+        <p>Email: llmartirez@my.cspc.edu.ph</p>
+        <p>Phone: +63 992 363 0328</p>
+    </section>
+</div>
+</body>
+</html>
